@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C36D942716A1C1A400465A2A /* HListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36D942516A1C1A400465A2A /* HListViewController.m */; };
+		C36D942816A1C1A400465A2A /* HListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36D942616A1C1A400465A2A /* HListViewController.xib */; };
+		C36D942B16A1C23300465A2A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36D942916A1C22400465A2A /* QuartzCore.framework */; };
 		C37A05B216A1923D00F13F42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37A05B116A1923D00F13F42 /* UIKit.framework */; };
 		C37A05B416A1923D00F13F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37A05B316A1923D00F13F42 /* Foundation.framework */; };
 		C37A05B616A1923D00F13F42 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37A05B516A1923D00F13F42 /* CoreGraphics.framework */; };
@@ -23,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C36D942416A1C1A400465A2A /* HListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HListViewController.h; sourceTree = "<group>"; };
+		C36D942516A1C1A400465A2A /* HListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HListViewController.m; sourceTree = "<group>"; };
+		C36D942616A1C1A400465A2A /* HListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HListViewController.xib; sourceTree = "<group>"; };
+		C36D942916A1C22400465A2A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C37A05AD16A1923D00F13F42 /* IOSTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37A05B116A1923D00F13F42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C37A05B316A1923D00F13F42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36D942B16A1C23300465A2A /* QuartzCore.framework in Frameworks */,
 				C37A05B216A1923D00F13F42 /* UIKit.framework in Frameworks */,
 				C37A05B416A1923D00F13F42 /* Foundation.framework in Frameworks */,
 				C37A05B616A1923D00F13F42 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +66,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C36D942316A1C0EE00465A2A /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		C37A05A216A1923D00F13F42 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +93,7 @@
 		C37A05B016A1923D00F13F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C36D942916A1C22400465A2A /* QuartzCore.framework */,
 				C37A05B116A1923D00F13F42 /* UIKit.framework */,
 				C37A05B316A1923D00F13F42 /* Foundation.framework */,
 				C37A05B516A1923D00F13F42 /* CoreGraphics.framework */,
@@ -114,12 +130,16 @@
 		C37A05CE16A192DB00F13F42 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				C36D942316A1C0EE00465A2A /* test */,
 				C37A05CF16A192DB00F13F42 /* category */,
 				C37A05D016A192DB00F13F42 /* core */,
 				C37A05D116A192DB00F13F42 /* customUI */,
 				C37A05D516A1936200F13F42 /* HTestViewController.h */,
 				C37A05D616A1936300F13F42 /* HTestViewController.m */,
 				C37A05D716A1936300F13F42 /* HTestViewController.xib */,
+				C36D942416A1C1A400465A2A /* HListViewController.h */,
+				C36D942516A1C1A400465A2A /* HListViewController.m */,
+				C36D942616A1C1A400465A2A /* HListViewController.xib */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -205,6 +225,7 @@
 				C37A05C816A1923D00F13F42 /* Default-568h@2x.png in Resources */,
 				C37A05D916A1936300F13F42 /* HTestViewController.xib in Resources */,
 				C37A05DB16A1939000F13F42 /* readme.rtf in Resources */,
+				C36D942816A1C1A400465A2A /* HListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +240,7 @@
 				C37A05C216A1923D00F13F42 /* HAppDelegate.m in Sources */,
 				C37A05D416A1933400F13F42 /* HIOSCoreCofig.m in Sources */,
 				C37A05D816A1936300F13F42 /* HTestViewController.m in Sources */,
+				C36D942716A1C1A400465A2A /* HListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +315,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSTemplate/IOSTemplate-Prefix.pch";
 				INFOPLIST_FILE = "IOSTemplate/IOSTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOSTemplate/IOSTemplate-Prefix.pch";
 				INFOPLIST_FILE = "IOSTemplate/IOSTemplate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -328,6 +352,7 @@
 				C37A05CD16A1923D00F13F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

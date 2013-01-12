@@ -7,7 +7,8 @@
 //
 
 #import "HAppDelegate.h"
-
+#import "HTestViewController.h"
+#import "HListViewController.h"
 @implementation HAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +16,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+#ifdef JustForTest
+    
+    HTestViewController *  rootVC=[[HTestViewController alloc] initWithNibName:@"HTestViewController" bundle:nil];
+    self.window.rootViewController=rootVC;
+    rootVC.view.backgroundColor=[UIColor yellowColor];
+    
+#else
+    
+    HListViewController *  rootVC=[[HListViewController alloc] initWithNibName:@"HListViewController" bundle:nil];
+    UINavigationController * nvc=[[UINavigationController alloc] initWithRootViewController:rootVC];
+    //[nvc.navigationBar setBackgroundImage:[UIImage imageNamed: @"topbarBg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.window.rootViewController=nvc;
+    rootVC.view.backgroundColor=[UIColor blueColor];
+    
+#endif
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
